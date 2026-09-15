@@ -320,7 +320,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlFront);
             this.Name = "LoginPortal";
-            this.Text = "Form1";
+            this.Text = "LoginForm";
+            this.Load += new System.EventHandler(this.LoginPortal_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);

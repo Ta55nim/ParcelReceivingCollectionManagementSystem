@@ -44,6 +44,16 @@ namespace ParcelManagement
             if (username == "admin" && password == "1234")
             {
                 MessageBox.Show("Admin Login Successful!");
+
+                // Open Admin Dashboard
+                FrmAdminDashboard adminDashboard =
+                    new FrmAdminDashboard();
+
+                adminDashboard.Show();
+
+                // Hide Login Page
+                this.Hide();
+
                 return;
             }
 
@@ -93,7 +103,9 @@ namespace ParcelManagement
 
                         MessageBox.Show("User Login Successful!");
 
-                        UserDashboard userDashboard = new UserDashboard(username);
+                        UserDashboard userDashboard =
+                            new UserDashboard(username);
+
                         userDashboard.Show();
 
                         this.Hide();
@@ -108,11 +120,18 @@ namespace ParcelManagement
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            RegistrationPortal registrationPortal = new RegistrationPortal();
+            RegistrationPortal registrationPortal =
+                new RegistrationPortal();
+
             registrationPortal.Show();
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoginPortal_Load(object sender, EventArgs e)
         {
 
         }
