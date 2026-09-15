@@ -87,8 +87,16 @@ namespace ParcelManagement
                             return;
                         }
 
-                        // Correct user login
+                        // =====================================
+                        // CORRECT USER LOGIN
+                        // =====================================
+
                         MessageBox.Show("User Login Successful!");
+
+                        UserDashboard userDashboard = new UserDashboard(username);
+                        userDashboard.Show();
+
+                        this.Hide();
                     }
                 }
             }
