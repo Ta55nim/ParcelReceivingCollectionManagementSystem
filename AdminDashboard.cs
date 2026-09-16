@@ -173,9 +173,10 @@ namespace ParcelManagement
 
         private void btnCollectionRequests_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(
-                "Collection Requests feature will be opened here.",
-                "Collection Requests");
+            FrmCollectionRequest collectionRequests =
+                new FrmCollectionRequest();
+
+            collectionRequests.Show();
         }
 
         private void btnReports_Click(object sender, EventArgs e)
