@@ -195,9 +195,7 @@ namespace ParcelManagement
             this.Close();
         }
 
-        // ==========================================
-        // RECIEVING AND ENTRY
-        // ==========================================
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -207,9 +205,7 @@ namespace ParcelManagement
             parcelReceiving.Show();
         }
 
-        // ==========================================
-        // PICKUP VERIFICATION
-        // ==========================================
+    
 
         private void button2_Click(object sender, EventArgs e)
         {
